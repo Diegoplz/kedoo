@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | Kedoo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <section class="hero">
+    <nav class="navbar d-flex flex-wrap justify-content-between align-items-center">
+      <a class="brand" href="#">kedoo</a>
+      <div class="searchbar"><i class="fa-solid fa-magnifying-glass"></i><input placeholder="Busca eventos"></div>
+      <button class="nav-pill"><i class="fa-solid fa-location-dot me-2"></i>La almozara <i
+          class="fa-solid fa-chevron-down ms-2"></i></button>
+      <button class="nav-pill purple"><i class="fa-solid fa-user-plus me-2"></i>Registrarme</button>
+      <button class="nav-pill dark"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>Iniciar sesión</button>
+    </nav>
+    <div class="hero-copy">
+      <h1>Contacto</h1>
+      <p>¿Tienes alguna duda, sugerencia o quieres formar<br class="d-none d-md-block"> parte de Kedoo?</p>
+      <p>¡Escríbenos! Estamos aquí para ayudarte</p>
+    </div>
+    <div class="contact-strip">
+      <div class="row g-0 align-items-center">
+        <div class="col-6 col-lg-3 contact-item">
+          <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+          <h6>EMAIL</h6>
+          <p>hola@kedoo.com</p>
+        </div>
+        <div class="col-6 col-lg-3 contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <h6>TELÉFONO</h6>
+          <p>+34 999 99 99 99</p>
+        </div>
+        <div class="col-6 col-lg-3 contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h6>NUESTRA OFICINA</h6>
+          <p><u>C. del Conde de Aranda, 9</u><br>50004, Zaragoza</p>
+        </div>
+        <div class="col-6 col-lg-3 contact-item">
+          <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
+          <h6>HORARIO</h6>
+          <p>L-V · 09:00 – 17:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="message-section">
+    <div class="container-fluid px-0">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <h2>Cuéntanos<br>qué necesitas</h2>
+          <p class="intro">Ya sea para resolver una duda, darnos tu opinión o proponer una colaboración, estaremos
+            encantados de leerte.</p>
+        </div>
+        <div class="col-lg-7">
+          <form class="contact-form"><label for="name">Nombre</label><input id="name" class="form-control"
+              placeholder="Tu nombre" required><label for="email">Correo electrónico</label><input id="email"
+              type="email" class="form-control" placeholder="Tu correo electrónico" required><label
+              for="message">Mensaje</label><textarea id="message" class="form-control"
+              placeholder="Escribe tu mensaje..." required></textarea><button class="btn-purple" type="submit">Enviar
+              mensaje</button></form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="community">
+    <h2>Únete a nuestra comunidad</h2>
+    <p>Descubre planes, conoce gente y vive experiencias<br class="d-none d-md-block"> únicas con Kedoo</p><a
+      class="btn-purple" href="#">Registrarme ahora <i class="fa-solid fa-arrow-right ms-2"></i></a>
+  </section>
+  <?php include("includes/footer.php");?>
+  <script>document.querySelectorAll('form').forEach(f => f.addEventListener('submit', e => e.preventDefault()));</script>
+</body>
+ 
+</html>
